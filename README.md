@@ -1,1 +1,1 @@
-# My-new-way
+puts "Hello,world\nIts my first code!"
