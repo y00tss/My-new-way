@@ -1,0 +1,18 @@
+#access to the site depends you live place and age
+
+puts "Write you age"
+age = gets.to_i 
+
+puts "Write you country"
+country = gets.strip
+
+# Japan, USA - 21 yo
+# Another countries - 18 yo
+if ( country == "Japan" && country == "USA" ) && age >= 21
+  puts "Access opened fot #{country}"
+elsif ( country != "Japan" && country != "USA" ) && age >= 18
+  puts "Access opened for #{country}"
+
+else
+  puts "Access closed"
+end
