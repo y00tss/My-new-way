@@ -1,0 +1,26 @@
+random_number = (rand * 10).to_i + 1
+
+puts "I guessed a number from 1 to 10\nWrite your guess, you have 3 trying"
+
+interations = 0
+
+  loop do
+interations = interations + 1
+
+    if interations > 3
+      puts "Game over"
+      break
+    end
+
+answer = gets.to_i
+
+    if (answer == random_number)
+      puts "You win"
+      break
+    elsif (answer > random_number)
+      puts "Your number is bigger"
+    elsif (answer < random_number)
+      puts "Your number is smaller"
+    end
+
+  end
